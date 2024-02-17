@@ -7,12 +7,12 @@ export default function Card({photo, price, alt}){
     const Del = () => {(0)}
     // const Payment(){}
     return(
-        <section>
+        <section className="cartao">
         <img src={photo} alt={alt} width={'150px'}/>
         <h2>{item}</h2>
         <h2>{price}</h2>
-        <button onClick={Add}>Adicionar itens</button>
-        <button onClick={Rem}>Remover itens</button>
+        <button onClick={Add}> Adicionar itens </button>
+        <button onClick={Rem}> Remover itens </button>
         <button></button>
         </section>
     )

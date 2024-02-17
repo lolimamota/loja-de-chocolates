@@ -9,7 +9,7 @@ export default function Header(){
                 <ul>
                     <li>
                         <a href="#Cookie">
-                        Bicoitos
+                        Biscoitos
                         </a>
                     </li>
                     <li>
