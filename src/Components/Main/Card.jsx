@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import styled from 'styled-components'
-import More from '../../assets/mais.png'
-import Menos from '../../assets/menos.png'
+import styled from 'styled-components';
+import More from '../../assets/mais.png';
+import Menos from '../../assets/menos.png';
 
 const Section = styled.section
     `border-radius: 5rem;
@@ -32,11 +32,15 @@ export default function Card({photo, price, alt}){
     return(
         <Section className="cartao">
         <img src={photo} alt={alt} width={'150px'}/>
-        <h2>{price}</h2>
+        <h2>R$ {(price*item).toFixed(2)}</h2>
         <Div className="buttonCard">
-        <Button onClick={Rem}> <img src={Menos} alt="Seta apontando para a esquerda" /> </Button>
+        <Button onClick={Rem}>
+            <img src={Menos} alt="Seta apontando para a esquerda"/>
+        </Button>
         <h2>{item}</h2>
-        <Button onClick={Add}> <img src={More} alt="Seta apontando para a direita" /> </Button>
+        <Button onClick={Add}>
+            <img src={More} alt="Seta apontando para a direita"/>
+        </Button>
         </Div>
         <Button></Button>
         </Section>

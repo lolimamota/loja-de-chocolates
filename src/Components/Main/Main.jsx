@@ -14,14 +14,15 @@ import Square from '../../assets/quadradinhos.png';
 // `;
 
 export default function Main(){
+
     return(
         <section className="main">
         <h1 className="h1Main">Chocolates</h1>
         <div className="divMain">
-        <Card photo={Barra} alt={"A imagem tem três barras de chocolate, sendo uma amargo, outra ao leite e a terceira é branco."} price={"R$ 15,00"}/>
-        <Card photo={BarraArt} alt={"A imagem mostra várias barras de chocolate ao leite com diferentes tipos de produtos para dar sabor, exemplo: laranja, café, hortelã, amendoim, uva passas, avelãs e noz."} price={"R$ 25,00"}/>
-        <Card photo={Pilha} alt={"A imagem mostra 7 barras de chocolate ao leite empilhadas de vários tipos, por exemplo, com uva passa ou amendoim."} price={"R$ 18,00"}/>
-        <Card photo={Square} alt={"A imagem mostra pequenos quadradinhos de chocolate ao leite empilhados."} price={"R$ 5,00"}/>
+        <Card photo={Barra} alt={"A imagem tem três barras de chocolate, sendo uma amargo, outra ao leite e a terceira é branco."} price={15}/>
+        <Card photo={BarraArt} alt={"A imagem mostra várias barras de chocolate ao leite com diferentes tipos de produtos para dar sabor, exemplo: laranja, café, hortelã, amendoim, uva passas, avelãs e noz."} price={25}/>
+        <Card photo={Pilha} alt={"A imagem mostra 7 barras de chocolate ao leite empilhadas de vários tipos, por exemplo, com uva passa ou amendoim."} price={18}/>
+        <Card photo={Square} alt={"A imagem mostra pequenos quadradinhos de chocolate ao leite empilhados."} price={5}/>
         </div>
         </section>
     )
