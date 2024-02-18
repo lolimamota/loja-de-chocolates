@@ -19,8 +19,7 @@ const Button = styled.button
      background-color: transparent;
      `;
 const Div = styled.div
-    `padding-top: 2rem;
-    display: flex;
+    `display: flex;
     justify-content: space-evenly;
     align-items: center;
     `;
