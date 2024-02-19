@@ -3,26 +3,23 @@ import styled from 'styled-components';
 import More from '../../assets/mais.png';
 import Menos from '../../assets/menos.png';
 
-const Section = styled.section
-    `border-radius: 5rem;
-     border: solid #37231E 1px;
-     width: 20vw;
-     height: 20vw;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     `;
-const Button = styled.button
-     `width: 5vw;
-     border: none;
-     background-color: transparent;
-     `;
-const Div = styled.div
-    `display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    `;
+const Section = styled.section `border-radius: 5rem;
+border: solid #37231E 1px;
+width: 20vw;
+height: 20vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;`;
+
+const Button = styled.button `width: 5vw;
+border: none;
+background-color: transparent;`;
+
+const Div = styled.div `display: flex;
+justify-content: space-evenly;
+align-items: center;`;
+
 export default function Card({photo, price, alt}){
     const [item, setItem] = useState(0);
     const Add = () => {setItem(prevItem => prevItem < 9 ? prevItem + 1 : prevItem)}
