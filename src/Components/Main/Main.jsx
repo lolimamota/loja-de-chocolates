@@ -14,6 +14,7 @@ export default function Main(){
 
     return(
         <>
+        <Header/>
         <h1 className="h1Main">Chocolates</h1>
         <Section className="main">
         <div className="divMain">
